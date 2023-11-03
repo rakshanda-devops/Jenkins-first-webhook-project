@@ -3,7 +3,9 @@ pipeline {
     stages {
         stage ('build') {
             steps {
-                echo "Pinspire Institute to Reinvent Yourself"
+                echo "Executing Your Python Program"
+                sh 'python --version'
+                sh 'python pipeline.py'
             }
         }
     }
